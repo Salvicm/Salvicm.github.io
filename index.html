@@ -1,7 +1,30 @@
 <!DOCTYPE html>
 <html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Ex. 1</title>
+	<link href="Stylesheets/style.css" rel="stylesheet" type="text/css" />
+
+</head>
+
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+	<form name="personals">
+
+		<ul id="mainForm">
+			<li>Nom: <input type="text" name="nom"> </li>
+        <li>Cognom: <input type="text" name="cognom"></li>
+        <li>Correu: <input type="text" name="correu" onfocusout="checkMail(this.value);"></li>
+        <li>Data de naixement: <input type="text" name="dataNaixament" onfocusout="checkBirthday(this.value)";></li>
+        <li>Comentari: <input type="text" name="comentari" onfocusout="checkComment(this)"></li>  
+        <li><span id="paraules"> </span></li>
+        <li>Contrasenya:</span> <input type="password" name="pass" onfocusout="checkPassword(this.value)";></li>
+        <li>Repetir contrasenya:</span> <input type="password" name="passValidity" onfocusout="checkPasswordValidity(pass.value, this.value)";></li>
+        <li><input id="sendButton" type="button" name="boto" value="" onclick= "checkEverything(correu.value, dataNaixament.value, pass.value, passValidity.value, nom.value, cognom.value);"></li>
+        
+      </ul>
+    </form>
+    <script src="Scripts/scriptgeneral.js"></script>
+  </body>
 </html>
