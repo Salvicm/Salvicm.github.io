@@ -60,7 +60,7 @@ a:hover,a:active,a:focus{
     font-size: 1.2em;
     transition: 0.4s ease all;
 }
-.btn:hover {
+.btn:hover,.btn:active,.btn:focus {
     background: #fff;
     color: #000;
 }
@@ -124,7 +124,7 @@ header{
     bottom: 10%;
     left: 49%;
 }
-.scrollDown:hover{
+.scrollDown:hover,.scrollDown:active,.scrollDown:focus{
 	color: rgba(255, 255, 255, 0.4);
 	transition: 0.4s ease all;
 }
@@ -234,7 +234,7 @@ header{
     margin-top: 40px;
     transition: all 0.3s ease;
 }
-.service-wrap:hover i {
+.service-wrap:hover i, .service-wrap:active i,.service-wrap:focus i {
     color: #e66f69;
 }
 .service-wrap p {
@@ -328,7 +328,7 @@ header{
 	transition: transform 0.4s;
 }
 
-.no-touch .cs-style-3 figure:hover img,
+.no-touch .cs-style-3 figure:hover img, .figure:active img, .figure:focus img,
 .cs-style-3 figure.cs-hover img {
 	-webkit-transform: translateY(-50px);
 	-moz-transform: translateY(-50px);
@@ -351,7 +351,7 @@ header{
 	transition: transform 0.4s, opacity 0.1s 0.3s;
 }
 
-.no-touch .cs-style-3 figure:hover figcaption,
+.no-touch .cs-style-3 figure:hover figcaption, .figure:active figcaption, .figure:focus figcaption,
 .cs-style-3 figure.cs-hover figcaption {
 	opacity: 1;
 	-webkit-transform: translateY(0px);
@@ -372,7 +372,7 @@ header{
 	background: transparent;
 	border: 1px solid #fff;
 }
-.button:hover {
+.button:hover, .button:active, .button:focus {
     background: white;
     color: #000;
 }
@@ -387,7 +387,7 @@ header{
     color: #000;
     padding: 15px 30px;
 }
-.big.button:hover {
+.big.button:hover, .big.button:active, .big.button:focus {
     background: #000;
     color: #fff;
 }
@@ -440,7 +440,6 @@ header{
 
 .mapWrap {
     position: relative;
-    min-height: 600px;
 }
 #googleMap {
     position: absolute !important;
@@ -452,11 +451,12 @@ header{
     background: rgba(0, 0, 0, 0.7);
     width: 100%;
     position: relative;
-    padding: 80px 0px 60px 0px;
+    padding: 40px 0px 60px 0px;
 }
 
 .moreDetails {
     color: #fff;
+	margin-top: -30px;
 }
 .con-title {
     font-weight: 300;
@@ -532,7 +532,7 @@ header{
     background-size: 100% 200%;
 }
 
-.social-icons a:hover {
+.social-icons a:hover, .social-icons:active, .social-icons:focus {
     background-position: 0px -50px;
 }
 .twitter{
@@ -568,7 +568,7 @@ footer {
     padding: 20px 0px;
     text-align: right;
 }
-.designed a:hover {
+.designed a:hover, .designed a:active, .designed a:focus {
     color: #e66f69;
 }
 
